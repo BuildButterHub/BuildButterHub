@@ -178,52 +178,6 @@ function AutoBuyFunction(Item,Amount)
 
 
 
-	function AutoFarm()
-		notifications:message{Title = "Build Butter Hub",Description = "Farm Started",Icon = 6023426926}
-		status = true
-		
-			while status do
-				print("Gravitation off")
-				game.workspace.Gravity = 2
-		print("1 LVL")
-		
-		
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-51.5656433, 65.0000458, 1369.09009, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-		wait(4)
-		game.workspace.Gravity = 162
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-55.7065125, -357.739624, 9492.35645, 0, 0, -1, 0, 1, 0, 1, 0, 0)
-		wait(0.7)
-		game.workspace.Gravity = 2
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-51.5656433, 65.0000458, 2139.09009, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-51.5656433, 65.0000458, 2909.09009, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-51.5656433, 65.0000458, 3679.09009, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-		wait(2)
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-51.5656433, 65.0000458, 4449.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-		wait(2)
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-51.5656433, 65.0000458, 5219.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-		wait(2)
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-51.5656433, 65.0000458, 6759.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-		wait(2)
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-51.5656433, 65.0000458, 5989.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-		wait(0.5)
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-51.5656433, 65.0000458, 7529.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-		wait(0.7)
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-51.5656433, 65.0000458, 8299.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-		wait(0.5)
-		print("Teleport Suspen")
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(469.263947, -10.100008, 616.786743, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-		
-		workspace.ClaimRiverResultsGold:FireServer()
-					 print("on")
-					 wait(7)
-					 end
-					end
-
-
-
-
-
-
 local Mercury = loadstring(game:HttpGet("https://raw.githubusercontent.com/deeeity/mercury-lib/master/src.lua"))()
 local notifications = loadstring(game:HttpGet(("https://raw.githubusercontent.com/AbstractPoo/Main/main/Notifications.lua"),true))()
 local GUI = Mercury:Create{
@@ -282,7 +236,45 @@ Tab5:Button{
 	Name = "Start",
 	Description = nil,
 	Callback = function() 
-		AutoFarm() end
+		notifications:message{Title = "Build Butter Hub",Description = "Farm Started",Icon = 6023426926}
+		status = true
+		
+			while status do
+				print("Gravitation off")
+				game.workspace.Gravity = 2
+		print("1 LVL")
+		
+		
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-51.5656433, 65.0000458, 1369.09009, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+		wait(4)
+		game.workspace.Gravity = 162
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-55.7065125, -357.739624, 9492.35645, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+		wait(0.7)
+		game.workspace.Gravity = 2
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-51.5656433, 65.0000458, 2139.09009, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-51.5656433, 65.0000458, 2909.09009, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-51.5656433, 65.0000458, 3679.09009, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+		wait(2)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-51.5656433, 65.0000458, 4449.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+		wait(2)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-51.5656433, 65.0000458, 5219.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+		wait(2)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-51.5656433, 65.0000458, 6759.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+		wait(2)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-51.5656433, 65.0000458, 5989.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+		wait(0.5)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-51.5656433, 65.0000458, 7529.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+		wait(0.7)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-51.5656433, 65.0000458, 8299.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+		wait(0.5)
+		print("Teleport Suspen")
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(469.263947, -10.100008, 616.786743, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+		
+		workspace.ClaimRiverResultsGold:FireServer()
+					 print("on")
+					 wait(7)
+					 end
+					end
 }
 
 --AutoBuy
@@ -312,3 +304,4 @@ Tab6:Button{
 			Callback = function() 
 				AutoBuyFunction(ItemToBuy,ValueDrop) end
 		}
+
