@@ -1,0 +1,138 @@
+-- Gui to Lua
+-- Version: 3.6
+
+-- Instances:
+
+
+
+-- Properties:
+
+
+
+
+local UiLibrary = {}
+local Elements = {}
+
+function CreateLib:CreateWindow(WindowProperties)
+    WindowProperties.Name = WindowProperties.Name or "Button"
+
+
+
+    local ScreenUiLibrary = Instance.new("ScreenGui")
+
+ScreenUiLibrary.Name = "ScreenUiLibrary"
+ScreenUiLibrary.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenUiLibrary.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+
+local Frame = Instance.new("Frame")
+
+Frame.Parent = ScreenUiLibrary
+Frame.BackgroundColor3 = Color3.fromRGB(111, 111, 111)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.0841772184, 0, 0.201559022, 0)
+Frame.Size = UDim2.new(0, 313, 0, 425)
+
+
+local UICorner = Instance.new("UICorner")
+
+UICorner.Parent = Frame
+
+
+local TextFrame = Instance.new("Frame")
+
+TextFrame.Name = "TextFrame"
+TextFrame.Parent = Frame
+TextFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextFrame.BorderSizePixel = 0
+TextFrame.Size = UDim2.new(0, 313, 0, 100)
+
+
+local UICorner_2 = Instance.new("UICorner")
+
+UICorner_2.Parent = TextFrame
+
+
+local UiLibraryText = Instance.new("TextLabel")
+
+UiLibraryText.Name = "UiLibraryText"
+UiLibraryText.Parent = TextFrame
+UiLibraryText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UiLibraryText.BackgroundTransparency = 1.000
+UiLibraryText.BorderColor3 = Color3.fromRGB(0, 0, 0)
+UiLibraryText.BorderSizePixel = 0
+UiLibraryText.Position = UDim2.new(0.178913742, 0, 0.25, 0)
+UiLibraryText.Size = UDim2.new(0, 200, 0, 50)
+UiLibraryText.Font = Enum.Font.SourceSansBold
+UiLibraryText.Text = "Ui Library"
+UiLibraryText.TextColor3 = Color3.fromRGB(0, 0, 0)
+UiLibraryText.TextScaled = true
+UiLibraryText.TextSize = 29.000
+UiLibraryText.TextWrapped = true
+
+
+local ScrollingFrame = Instance.new("ScrollingFrame")
+
+ScrollingFrame.Parent = game.StarterGui.ScreenUiLibrary.Frame
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0, 0, 0.258823544, 0)
+ScrollingFrame.Size = UDim2.new(0, 313, 0, 315)
+ScrollingFrame.ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
+
+
+local UIListLayout = Instance.new("UIListLayout")
+
+UIListLayout.Parent = ScrollingFrame
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 8)
+
+
+
+function Elements:CreateButton(ButtonProperties)
+    ButtonProperties.Title = ButtonProperties.Title or "Button"
+    ButtonProperties.Callback = ButtonProperties.Callback or function() end
+    
+    local UiButton = Instance.new("TextButton")
+    local UICorner = Instance.new("UICorner")
+    
+    
+    UiButton.Name = "UiButton"
+    UiButton.Parent = game.StarterGui.ScreenUiLibrary.Frame.ScrollingFrame
+    UiButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    UiButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+    UiButton.BorderSizePixel = 0
+    UiButton.Position = UDim2.new(0.127795532, 0, 0, 0)
+    UiButton.Size = UDim2.new(0, 200, 0, 50)
+    UiButton.Font = Enum.Font.SourceSans
+    UiButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+    UiButton.TextSize = 14.000
+    
+    UICorner.Parent = UiButton
+            
+
+        UiButton.MouseButton1Click:Connect(function()
+            ButtonProperties.Callback()
+        end)
+        
+        
+        
+end
+end
+
+local Window = UiLibrary:CreateWindow({
+    Name = "UI Library"
+}) 
+
+
+local Button = Elements:CreateButton({ 
+    Title = "Button", 
+    Callback = function()
+        print("Button Clicked!")
+    end 
+})
