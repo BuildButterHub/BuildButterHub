@@ -162,6 +162,13 @@ Section2:NewSlider("Speed", "", 250, 16, function(SpeedPlayerStat)
 
 Section2:NewLabel("Other")
 
+Section4:NewButton("Fox Charter", "", function()
+    notifications:message{Title = "Build Butter Hub",Description = "Done",Icon = 6023426926}
+    local ButterHubCharter = {
+        [1] = "FoxCharacter"}
+    workspace.ChangeCharacter:FireServer(unpack(ButterHubCharter))
+end)
+
 local TeleportTeam
 
 
