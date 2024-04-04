@@ -397,6 +397,7 @@ function Kavo.CreateLib(kavName, themeList)
         page.ScrollBarThickness = 5
         page.Visible = false
         page.ScrollBarImageColor3 = Color3.fromRGB(themeList.SchemeColor.r * 255 - 16, themeList.SchemeColor.g * 255 - 15, themeList.SchemeColor.b * 255 - 28)
+        page.BackgroundTransparency = 1
 
         pageListing.Name = "pageListing"
         pageListing.Parent = page
