@@ -112,12 +112,12 @@ local themeStyles = {
         TextColor = Color3.fromRGB(152, 99, 53),
         ElementColor = Color3.fromRGB(24, 24, 24)
     },
-    Serpent = {
+    BuildButterHubTheme = {
         SchemeColor = Color3.fromRGB(0, 166, 58),
-        Background = Color3.fromRGB(31, 41, 43),
+        Background = Color3.fromRGB(35, 35, 35),
         Header = Color3.fromRGB(22, 29, 31),
         TextColor = Color3.fromRGB(255,255,255),
-        ElementColor = Color3.fromRGB(22, 29, 31)
+        ElementColor = Color3.fromRGB(208, 208, 208)
     }
 }
 local oldTheme = ""
@@ -169,7 +169,7 @@ function Kavo.CreateLib(kavName, themeList)
         themeList = themeStyles.Sentinel
     elseif themeList == "Synapse" then
         themeList = themeStyles.Synapse
-    elseif themeList == "Serpent" then
+    elseif themeList == "BuildButterHubTheme" then
         themeList = themeStyles.Serpent
     else
         if themeList.SchemeColor == nil then
