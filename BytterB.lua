@@ -113,7 +113,7 @@ local themeStyles = {
         ElementColor = Color3.fromRGB(24, 24, 24)
     },
     BuildButterHubTheme = {
-        SchemeColor = Color3.fromRGB(0, 166, 58),
+        SchemeColor = Color3.fromRGB(45, 45, 45),
         Background = Color3.fromRGB(35, 35, 35),
         Header = Color3.fromRGB(22, 29, 31),
         TextColor = Color3.fromRGB(255,255,255),
